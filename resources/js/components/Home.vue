@@ -1,13 +1,14 @@
 <template>
-    <div class="container">
-<h1>Home vue js</h1>
-    </div>
+  <div class="container">
+    <h1>Welkom in Tahani Portfolio</h1>
+
+  </div>
 </template>
 
 <script>
-    export default {
-        mounted() {
-            console.log('Component mounted.')
-        }
-    }
+export default {
+  mounted() {
+    console.log("Component mounted.");
+  },
+};
 </script>

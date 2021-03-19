@@ -18,9 +18,41 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   }
 });
 
@@ -42,9 +74,10 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   mounted: function mounted() {
-    console.log('Component mounted.');
+    console.log("Component mounted.");
   }
 });
 
@@ -277,7 +310,79 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("About vue js")])
+      _c("h1", [_vm._v("Tahani Alhammad")]),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", {
+            staticStyle: {
+              width: "20rem",
+              height: "30rem",
+              position: "relative",
+              background: "url('/images/tahanialhammad.jpg')",
+              "background-size": "cover",
+              "z-index": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("div", {
+            staticStyle: {
+              width: "20rem",
+              height: "30rem",
+              position: "absolute",
+              top: "2rem",
+              right: "10rem",
+              border: "12px solid yellow",
+              "z-index": "0"
+            }
+          })
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6 mt-5" }, [
+          _c("p", [
+            _vm._v(
+              "\n        Ik ben Tahani Alhammad woon in Groningen en kom oorspronkelijk uit\n        Irak, waar ik computer engineer was. Bestond mijn werk daar\n        voornamelijk uit onderzoek naar o.a. netwerkapparaten, inmiddels weet\n        ik dat ik de kant van front end developer op wil. Hoewel mijn passie\n        daar ligt, heb ik ook interesse in de back end-kant van programmeren.\n        Ik vond CodeGorilla-avontuur als een van de tofste dingen die ik ooit\n        heeft gedaan. Mijn programmertalen zijn : HTML5/CSS3, SASS, Bootstrap,\n        JS, NodeJS, Express, EJS, VueJs, JSON, Mongoose, MongoDB, PHP, MySQL\n        en Laravel\n      "
+            )
+          ])
+        ])
+      ]),
+      _vm._v(" "),
+      _c("hr"),
+      _vm._v(" "),
+      _c("div", { staticClass: "row" }, [
+        _c("div", { staticClass: "col-md-6 mt-5" }, [
+          _c("p", [
+            _vm._v(
+              "\n     Ik leer snel nieuwe dingen, maar stop pas als ik echt tevreden is. Ik ben een doorzetter en pas zich makkelijk aan. Dit merkt ik aan het feit dat ik zes jaar geleden vanuit Irak naar Nederland kwam en mezelf het doel stelde om als front end developer aan de slag te gaan. Met mijn gevoel voor verantwoordelijkheid en oog voor gebruiksvriendelijkheid onderscheid ik me van andere developers. Ik leerde mezelf allerlei skills aan en kon deze toepassen in het vrijwilligerswerk dat ze deed voor stichting Femina. Bij CodeGorilla bouwde ik mijn kennis en techniek verder uit, waar ik erg trots op is.\n      "
+            )
+          ])
+        ]),
+        _vm._v(" "),
+        _c("div", { staticClass: "col-md-6" }, [
+          _c("div", {
+            staticStyle: {
+              width: "20rem",
+              height: "30rem",
+              position: "relative",
+              background: "url('/images/tahanialhammad.jpg')",
+              "background-size": "cover",
+              "z-index": "1"
+            }
+          }),
+          _vm._v(" "),
+          _c("div", {
+            staticStyle: {
+              width: "20rem",
+              height: "30rem",
+              position: "absolute",
+              top: "2rem",
+              left: "4rem",
+              border: "12px solid yellow",
+              "z-index": "0"
+            }
+          })
+        ])
+      ])
     ])
   }
 ]
@@ -310,7 +415,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("Home vue js")])
+      _c("h1", [_vm._v("Welkom in Tahani Portfolio")])
     ])
   }
 ]
