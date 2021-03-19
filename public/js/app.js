@@ -310,7 +310,7 @@ var staticRenderFns = [
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
     return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("Tahani Alhammad")]),
+      _c("h1", { staticClass: "my-5" }, [_vm._v("Tahani Alhammad")]),
       _vm._v(" "),
       _c("div", { staticClass: "row" }, [
         _c("div", { staticClass: "col-md-6" }, [
@@ -364,7 +364,7 @@ var staticRenderFns = [
               width: "20rem",
               height: "30rem",
               position: "relative",
-              background: "url('/images/tahanialhammad.jpg')",
+              background: "url('/images/wotahwi.jpg')",
               "background-size": "cover",
               "z-index": "1"
             }

@@ -1,6 +1,6 @@
 <template>
   <div class="container">
-    <h1>Tahani Alhammad</h1>
+    <h1 class="my-5">Tahani Alhammad</h1>
     <div class="row">
       <div class="col-md-6">
         <div style="width: 20rem;height: 30rem;position: relative;background: url('/images/tahanialhammad.jpg');background-size: cover;z-index: 1;"></div>
@@ -29,7 +29,7 @@
         </p>
       </div>
       <div class="col-md-6">
-        <div style="width: 20rem;height: 30rem;position: relative;background: url('/images/tahanialhammad.jpg');background-size: cover;z-index: 1;"></div>
+        <div style="width: 20rem;height: 30rem;position: relative;background: url('/images/wotahwi.jpg');background-size: cover;z-index: 1;"></div>
         <div style="width: 20rem;height: 30rem;position: absolute;top: 2rem;left: 4rem;border: 12px solid yellow;z-index: 0;"></div>
       </div>
     </div>
