@@ -21,7 +21,10 @@
 </head>
 <body>
     <div id="app">
-    @include('layouts.navigation')
+        <div>
+            <img src="/images/flower2.png" style="height:10rem;" class="img-fluid" alt="">
+        </div>
+        @include('layouts.navigation')
         <main class="py-4">
          <router-view></router-view>
             <!-- @yield('content') -->

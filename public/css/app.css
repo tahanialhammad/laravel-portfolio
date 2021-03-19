@@ -10942,4 +10942,9 @@ a.text-dark:focus {
   }
 }
 
+body {
+  background: #3a3833;
+  color: white;
+}
+
 
