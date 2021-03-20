@@ -20,16 +20,16 @@ export default {
           el.classList.add(
             "sticky-top",
             "bg-white",
-            "navbar-light"
+            // "navbar-light"
           );
-           el.classList.remove("navbar-dark");
+        //    el.classList.remove("navbar-dark");
         } else {
           el.classList.remove(
               "sticky-top",
               "bg-white",
-              "navbar-light"
+            //   "navbar-light"
               );
-               el.classList.add("navbar-dark");
+            //    el.classList.add("navbar-dark");
         }
         // console.log('yor are scrolling');  //that need to be throtel
       }, 300)

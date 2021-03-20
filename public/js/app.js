@@ -76,9 +76,11 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
-  mounted: function mounted() {
-    console.log("Component mounted.");
+  data: {
+    task: 'hi'
   }
 });
 
@@ -113,11 +115,11 @@ __webpack_require__.r(__webpack_exports__);
       console.log("yor are scrolling");
 
       if (window.scrollY >= originalOffsetTop) {
-        el.classList.add("sticky-top", "bg-white", "navbar-light");
-        el.classList.remove("navbar-dark");
+        el.classList.add("sticky-top", "bg-white" // "navbar-light"
+        ); //    el.classList.remove("navbar-dark");
       } else {
-        el.classList.remove("sticky-top", "bg-white", "navbar-light");
-        el.classList.add("navbar-dark");
+        el.classList.remove("sticky-top", "bg-white" //   "navbar-light"
+        ); //    el.classList.add("navbar-dark");
       } // console.log('yor are scrolling');  //that need to be throtel
 
     }, 300));
@@ -17750,18 +17752,13 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c("h1", [_vm._v("Welkom in Tahani Portfolio")]),
+    _vm._v(" "),
+    _c("h2", [_vm._v("\n    " + _vm._s(_vm.task) + "\n")])
+  ])
 }
-var staticRenderFns = [
-  function() {
-    var _vm = this
-    var _h = _vm.$createElement
-    var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h1", [_vm._v("Welkom in Tahani Portfolio")])
-    ])
-  }
-]
+var staticRenderFns = []
 render._withStripped = true
 
 
