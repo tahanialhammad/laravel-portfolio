@@ -11,11 +11,17 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <!-- Left Side Of Navbar -->
             <ul class="navbar-nav mr-auto">
-                <li class="nav-item active">
+                <li class="nav-item">
                     <router-link to="/" class="nav-link" exact>Home</router-link>
                 </li>
-                <li class="nav-item active">
+                <li class="nav-item">
                     <router-link to="/about" class="nav-link">About</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/projects" class="nav-link">My Projects</router-link>
+                </li>
+                <li class="nav-item">
+                    <router-link to="/contact" class="nav-link">Contact</router-link>
                 </li>
             </ul>
 
