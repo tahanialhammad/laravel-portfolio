@@ -1,5 +1,7 @@
-import Home from './components/Home';
-import About from './components/About';
+import Home from './views/Home';
+import About from './views/About';
+import Projects from './views/Projects';
+import Contact from './views/Contact';
 
 export default{
     mode: 'history',
@@ -14,6 +16,16 @@ export default{
             path: '/about',
             component: About,
             name: 'about'
+        },
+        {
+            path: '/projects',
+            component: Projects,
+            name: 'projects'
+        },
+        {
+            path: '/contact',
+            component: Contact,
+            name: 'contact'
         }
     ]
 };

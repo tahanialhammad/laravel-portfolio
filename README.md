@@ -9,9 +9,10 @@
 
 ## About laravel-portfolio
 
+- Vue SPA Routing
 - Laravel Backend
 - VueJs Frontend
-- Bootstrap 
+- Bootstrap css
 
 - [Tahani Alhammad linkedIn ](https://www.linkedin.com/in/tahanialhammad/).
 - [Tahani Alhammad Behance ](https://www.behance.net/tahani-ali-alhammad).

@@ -7,3 +7,9 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 body{background: #3a3833; color: white;}
+// .navbar-dark .navbar-nav .show > .nav-link, .navbar-dark .navbar-nav .active > .nav-link, .navbar-dark .navbar-nav .nav-link.show, .navbar-dark .navbar-nav .nav-link.active {
+//     color: yellow;
+// }
+.bg-dark {
+    background-color: #3a3833 !important;
+}
