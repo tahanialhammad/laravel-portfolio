@@ -1,17 +1,28 @@
-// require('./bootstrap');
-import Vue from 'vue';
-import VueRouter from 'vue-router';
-import routes from './routes';
-import Pinned from './components/Pinned';
+// // require('./bootstrap');
+// import Vue from 'vue';
+// import VueRouter from 'vue-router';
+// import routes from './routes';
+// import Pinned from './components/Pinned';
 
-Vue.use(VueRouter);
+// Vue.use(VueRouter);
 
-// window.Vue = require('vue').default;
+// // window.Vue = require('vue').default;
 
 
-// Vue.component('example-component', require('./components/ExampleComponent.vue').default);
-const app = new Vue({
+// // Vue.component('example-component', require('./components/ExampleComponent.vue').default);
+// const app = new Vue({
+//     el: '#app',
+//     components:{Pinned},
+//     router: new VueRouter(routes)
+// });
+
+
+//t
+import './bootstrap';
+import router from './routes';
+
+new Vue({
     el: '#app',
-    components:{Pinned},
-    router: new VueRouter(routes)
+
+    router
 });

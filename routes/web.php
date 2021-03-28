@@ -13,10 +13,20 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/{any?}', function () {
+Route::get('/', function () {
     return view('welcome');
 });
 
-Auth::routes();
+Route::get('/projects', function(){
+    return App\Models\Project::with('user')->latest()->get();
+});
 
+
+
+
+
+
+
+
+Auth::routes();
 Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
