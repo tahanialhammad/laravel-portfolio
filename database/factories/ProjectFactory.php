@@ -2,18 +2,19 @@
 
 namespace Database\Factories;
 
-use App\Models\Projects;
+use App\Models\Project;
 use App\Models\User;
+
 use Illuminate\Database\Eloquent\Factories\Factory;
 
-class ProjectsFactory extends Factory
+class ProjectFactory extends Factory
 {
     /**
      * The name of the factory's corresponding model.
      *
      * @var string
      */
-    protected $model = Projects::class;
+    protected $model = Project::class;
 
     /**
      * Define the model's default state.
