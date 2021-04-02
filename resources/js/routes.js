@@ -1,7 +1,7 @@
 // //t
-// import Vue from "vue"; //tt
+import Vue from "vue"; //tt
 import VueRouter from 'vue-router';
-// Vue.use(VueRouter);//t
+Vue.use(VueRouter);//t
 
 
 import Home from './views/Home';
