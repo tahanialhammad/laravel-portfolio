@@ -1873,6 +1873,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! moment */ "./node_modules/moment/moment.js");
 /* harmony import */ var moment__WEBPACK_IMPORTED_MODULE_0___default = /*#__PURE__*/__webpack_require__.n(moment__WEBPACK_IMPORTED_MODULE_0__);
+/* harmony import */ var _models_Project__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ../models/Project */ "./resources/js/models/Project.js");
 //
 //
 //
@@ -1890,8 +1891,7 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
+
 
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
@@ -1903,7 +1903,7 @@ __webpack_require__.r(__webpack_exports__);
     var _this = this;
 
     //ajax request to a server
-    axios.get("/projects").then(function (_ref) {
+    axios.get('/projects').then(function (_ref) {
       var data = _ref.data;
       return _this.projects = data;
     });
@@ -1985,6 +1985,45 @@ window.axios.defaults.headers.common['X-Requested-With'] = 'XMLHttpRequest';
 
 /***/ }),
 
+/***/ "./resources/js/models/Project.js":
+/*!****************************************!*\
+  !*** ./resources/js/models/Project.js ***!
+  \****************************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export */ __webpack_require__.d(__webpack_exports__, {
+/* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
+/* harmony export */ });
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+var Project = /*#__PURE__*/function () {
+  function Project() {
+    _classCallCheck(this, Project);
+  }
+
+  _createClass(Project, null, [{
+    key: "all",
+    value: function all(then) {
+      return axios.get('/projects').then(function (_ref) {
+        var data = _ref.data;
+        return then(data);
+      });
+    }
+  }]);
+
+  return Project;
+}();
+
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (Project);
+
+/***/ }),
+
 /***/ "./resources/js/routes.js":
 /*!********************************!*\
   !*** ./resources/js/routes.js ***!
@@ -1996,12 +2035,15 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ __webpack_require__.d(__webpack_exports__, {
 /* harmony export */   "default": () => (__WEBPACK_DEFAULT_EXPORT__)
 /* harmony export */ });
-/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
-/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./views/Home */ "./resources/js/views/Home.vue");
-/* harmony import */ var _views_MyProjects__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./views/MyProjects */ "./resources/js/views/MyProjects.vue");
+/* harmony import */ var vue__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! vue */ "./node_modules/vue/dist/vue.esm.js");
+/* harmony import */ var vue_router__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! vue-router */ "./node_modules/vue-router/dist/vue-router.esm.js");
+/* harmony import */ var _views_Home__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./views/Home */ "./resources/js/views/Home.vue");
+/* harmony import */ var _views_MyProjects__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! ./views/MyProjects */ "./resources/js/views/MyProjects.vue");
 // //t
-// import Vue from "vue"; //tt
- // Vue.use(VueRouter);//t
+ //tt
+
+
+vue__WEBPACK_IMPORTED_MODULE_0__.default.use(vue_router__WEBPACK_IMPORTED_MODULE_1__.default); //t
 
  // import About from './views/About';
 
@@ -2038,7 +2080,7 @@ var routes = [{
   path: '/',
   name: "Home",
   //t
-  component: _views_Home__WEBPACK_IMPORTED_MODULE_0__.default //t
+  component: _views_Home__WEBPACK_IMPORTED_MODULE_2__.default //t
 
 }, {
   path: '/about',
@@ -2050,7 +2092,7 @@ var routes = [{
 
 }, {
   path: '/myprojects',
-  component: _views_MyProjects__WEBPACK_IMPORTED_MODULE_1__.default,
+  component: _views_MyProjects__WEBPACK_IMPORTED_MODULE_3__.default,
   name: 'myprojects'
 }, {
   path: '/contact',
@@ -2060,7 +2102,7 @@ var routes = [{
   } //t
 
 }];
-/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_2__.default({
+/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (new vue_router__WEBPACK_IMPORTED_MODULE_1__.default({
   routes: routes,
   linkActiveClass: 'active'
 }));
@@ -23911,7 +23953,7 @@ var render = function() {
       _vm._l(_vm.projects, function(project) {
         return _c(
           "div",
-          { staticClass: "card", staticStyle: { width: "18rem" } },
+          { staticClass: "card text-dark", staticStyle: { width: "18rem" } },
           [
             _c("div", { staticClass: "card-body" }, [
               _c("h5", { staticClass: "card-title" }, [
@@ -23928,9 +23970,10 @@ var render = function() {
                 )
               ]),
               _vm._v(" "),
-              _c("p", { staticClass: "card-text" }, [
-                _vm._v("\n        " + _vm._s(project.body) + "\n      ")
-              ]),
+              _c("p", {
+                staticClass: "card-text",
+                domProps: { textContent: _vm._s(project.body) }
+              }),
               _vm._v(" "),
               _c("a", { staticClass: "card-link", attrs: { href: "#" } }, [
                 _vm._v("Card link")
