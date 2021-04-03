@@ -49,7 +49,39 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
+//
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
+  data: function data() {
+    return {
+      name: 'Tahani Alhammad',
+      skills: ['HTML', 'CSS', 'Javascript', 'MYSQL', 'PHP', 'WordPress'],
+      tools: [{
+        name: 'laravel',
+        percent: 70
+      }, {
+        name: 'Vuejs',
+        percent: 90
+      }, {
+        name: 'MYSQL',
+        percent: 60
+      }],
+      work_experience: 2,
+      like: 0
+    };
+  },
   mounted: function mounted() {
     console.log("Component mounted.");
   }
@@ -145,87 +177,169 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _vm._m(0)
+  return _c("div", { staticClass: "container" }, [
+    _c(
+      "h1",
+      {
+        directives: [
+          {
+            name: "show",
+            rawName: "v-show",
+            value: _vm.name,
+            expression: "name"
+          }
+        ],
+        staticClass: "my-5"
+      },
+      [_vm._v("Ik ben " + _vm._s(_vm.name))]
+    ),
+    _vm._v(" "),
+    _c("span", [_vm._v(_vm._s(_vm.like))]),
+    _vm._v(" "),
+    _c(
+      "button",
+      {
+        staticClass: "btn btn-outline-primary btn-sm rounded-circle",
+        on: {
+          click: function($event) {
+            _vm.like++
+          }
+        }
+      },
+      [_c("i", { staticClass: "far fa-heart" })]
+    ),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _vm._m(0),
+      _vm._v(" "),
+      _c("div", { staticClass: "col-md-6 mt-5" }, [
+        _c("p", [
+          _vm._v(
+            "\n        Ik ben Tahani Alhammad woon in Groningen en kom oorspronkelijk uit\n        Irak, waar ik computer engineer was. Bestond mijn werk daar\n        voornamelijk uit onderzoek naar o.a. netwerkapparaten, inmiddels weet\n        ik dat ik de kant van front end developer op wil. Hoewel mijn passie\n        daar ligt, heb ik ook interesse in de back end-kant van programmeren.\n        Ik vond CodeGorilla-avontuur als een van de tofste dingen die ik ooit\n        heeft gedaan. Mijn programmertalen zijn : HTML5/CSS3, SASS, Bootstrap,\n        JS, NodeJS, Express, EJS, VueJs, JSON, Mongoose, MongoDB, PHP, MySQL\n        en Laravel\n      "
+          )
+        ]),
+        _vm._v(" "),
+        _c(
+          "ul",
+          _vm._l(_vm.skills, function(skill) {
+            return _c("li", [_vm._v(_vm._s(skill))])
+          }),
+          0
+        ),
+        _vm._v(" "),
+        _vm.work_experience > 5
+          ? _c("h3", [_vm._v("Senior developer")])
+          : _vm.work_experience < 5 && _vm.work_experience >= 3
+          ? _c("h3", [_vm._v("Medior developer")])
+          : _c("h3", [_vm._v("Junior developer")])
+      ])
+    ]),
+    _vm._v(" "),
+    _c("hr"),
+    _vm._v(" "),
+    _c("div", { staticClass: "row" }, [
+      _c(
+        "div",
+        { staticClass: "col-md-6 mt-5" },
+        [
+          _c("p", [
+            _vm._v(
+              "\n     Ik leer snel nieuwe dingen, maar stop pas als ik echt tevreden is. Ik ben een doorzetter en pas zich makkelijk aan. Dit merkt ik aan het feit dat ik zes jaar geleden vanuit Irak naar Nederland kwam en mezelf het doel stelde om als front end developer aan de slag te gaan. Met mijn gevoel voor verantwoordelijkheid en oog voor gebruiksvriendelijkheid onderscheid ik me van andere developers. Ik leerde mezelf allerlei skills aan en kon deze toepassen in het vrijwilligerswerk dat ze deed voor stichting Femina. Bij CodeGorilla bouwde ik mijn kennis en techniek verder uit, waar ik erg trots op is.\n      "
+            )
+          ]),
+          _vm._v(" "),
+          _c(
+            "ul",
+            _vm._l(_vm.tools, function(tool) {
+              return _c("li", [
+                _vm._v(_vm._s(tool.name) + "-" + _vm._s(tool.percent) + "%")
+              ])
+            }),
+            0
+          ),
+          _vm._v(" "),
+          _vm._l(_vm.tools, function(tool) {
+            return _c("div", { staticClass: "progress mb-2" }, [
+              _c(
+                "div",
+                {
+                  staticClass: "progress-bar",
+                  staticStyle: { width: "25%" },
+                  attrs: {
+                    role: "progressbar",
+                    "aria-valuemin": "0",
+                    "aria-valuemax": "100"
+                  }
+                },
+                [_vm._v(_vm._s(tool.name))]
+              )
+            ])
+          })
+        ],
+        2
+      ),
+      _vm._v(" "),
+      _vm._m(1)
+    ])
+  ])
 }
 var staticRenderFns = [
   function() {
     var _vm = this
     var _h = _vm.$createElement
     var _c = _vm._self._c || _h
-    return _c("div", { staticClass: "container" }, [
-      _c("h1", { staticClass: "my-5" }, [_vm._v("Tahani Alhammad")]),
+    return _c("div", { staticClass: "col-md-6" }, [
+      _c("div", {
+        staticStyle: {
+          width: "20rem",
+          height: "30rem",
+          position: "relative",
+          background: "url('/images/tahanialhammad.jpg')",
+          "background-size": "cover",
+          "z-index": "1"
+        }
+      }),
       _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", {
-            staticStyle: {
-              width: "20rem",
-              height: "30rem",
-              position: "relative",
-              background: "url('/images/tahanialhammad.jpg')",
-              "background-size": "cover",
-              "z-index": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", {
-            staticStyle: {
-              width: "20rem",
-              height: "30rem",
-              position: "absolute",
-              top: "2rem",
-              right: "10rem",
-              border: "12px solid yellow",
-              "z-index": "0"
-            }
-          })
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6 mt-5" }, [
-          _c("p", [
-            _vm._v(
-              "\n        Ik ben Tahani Alhammad woon in Groningen en kom oorspronkelijk uit\n        Irak, waar ik computer engineer was. Bestond mijn werk daar\n        voornamelijk uit onderzoek naar o.a. netwerkapparaten, inmiddels weet\n        ik dat ik de kant van front end developer op wil. Hoewel mijn passie\n        daar ligt, heb ik ook interesse in de back end-kant van programmeren.\n        Ik vond CodeGorilla-avontuur als een van de tofste dingen die ik ooit\n        heeft gedaan. Mijn programmertalen zijn : HTML5/CSS3, SASS, Bootstrap,\n        JS, NodeJS, Express, EJS, VueJs, JSON, Mongoose, MongoDB, PHP, MySQL\n        en Laravel\n      "
-            )
-          ])
-        ])
-      ]),
+      _c("div", {
+        staticStyle: {
+          width: "20rem",
+          height: "30rem",
+          position: "absolute",
+          top: "2rem",
+          right: "10rem",
+          border: "12px solid yellow",
+          "z-index": "0"
+        }
+      })
+    ])
+  },
+  function() {
+    var _vm = this
+    var _h = _vm.$createElement
+    var _c = _vm._self._c || _h
+    return _c("div", { staticClass: "col-md-6" }, [
+      _c("div", {
+        staticStyle: {
+          width: "20rem",
+          height: "30rem",
+          position: "relative",
+          background: "url('/images/wotahwi.jpg')",
+          "background-size": "cover",
+          "z-index": "1"
+        }
+      }),
       _vm._v(" "),
-      _c("hr"),
-      _vm._v(" "),
-      _c("div", { staticClass: "row" }, [
-        _c("div", { staticClass: "col-md-6 mt-5" }, [
-          _c("p", [
-            _vm._v(
-              "\n     Ik leer snel nieuwe dingen, maar stop pas als ik echt tevreden is. Ik ben een doorzetter en pas zich makkelijk aan. Dit merkt ik aan het feit dat ik zes jaar geleden vanuit Irak naar Nederland kwam en mezelf het doel stelde om als front end developer aan de slag te gaan. Met mijn gevoel voor verantwoordelijkheid en oog voor gebruiksvriendelijkheid onderscheid ik me van andere developers. Ik leerde mezelf allerlei skills aan en kon deze toepassen in het vrijwilligerswerk dat ze deed voor stichting Femina. Bij CodeGorilla bouwde ik mijn kennis en techniek verder uit, waar ik erg trots op is.\n      "
-            )
-          ])
-        ]),
-        _vm._v(" "),
-        _c("div", { staticClass: "col-md-6" }, [
-          _c("div", {
-            staticStyle: {
-              width: "20rem",
-              height: "30rem",
-              position: "relative",
-              background: "url('/images/wotahwi.jpg')",
-              "background-size": "cover",
-              "z-index": "1"
-            }
-          }),
-          _vm._v(" "),
-          _c("div", {
-            staticStyle: {
-              width: "20rem",
-              height: "30rem",
-              position: "absolute",
-              top: "2rem",
-              left: "4rem",
-              border: "12px solid yellow",
-              "z-index": "0"
-            }
-          })
-        ])
-      ])
+      _c("div", {
+        staticStyle: {
+          width: "20rem",
+          height: "30rem",
+          position: "absolute",
+          top: "2rem",
+          left: "4rem",
+          border: "12px solid yellow",
+          "z-index": "0"
+        }
+      })
     ])
   }
 ]
