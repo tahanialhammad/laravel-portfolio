@@ -7,8 +7,15 @@
 
 <script>
 export default {
-  mounted() {
-    console.log("Component mounted.");
+  data() {
+   return{
+       services:[
+           {name: 'Web development', projectnumber : 3},
+           {name: 'Graphic Design', projectnumber : 5},
+           {name: 'WordPress', projectnumber : 4},
+       ]
+   }
   },
+  name: home
 };
 </script>
