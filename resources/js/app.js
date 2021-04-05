@@ -20,9 +20,9 @@
 //t
 import './bootstrap';
 import router from './routes';
+Vue.component('scroll-link', require('./components/ScrollLink.vue').default); //Golbal in project
 
 new Vue({
     el: '#app',
-
-    router
+    router,
 });
