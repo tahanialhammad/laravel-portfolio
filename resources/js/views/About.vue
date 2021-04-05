@@ -65,8 +65,5 @@ export default {
             like : 0
         }
     },
-  mounted() {
-    console.log("Component mounted.");
-  },
 };
 </script>

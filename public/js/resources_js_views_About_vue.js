@@ -81,9 +81,6 @@ __webpack_require__.r(__webpack_exports__);
       work_experience: 2,
       like: 0
     };
-  },
-  mounted: function mounted() {
-    console.log("Component mounted.");
   }
 });
 

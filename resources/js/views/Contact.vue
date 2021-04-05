@@ -9,8 +9,5 @@
 import ContactInfo from "../components/ContactInfo.vue";
 export default {
     components:{ContactInfo},
-  mounted() {
-    console.log("Component mounted.");
-  },
 };
 </script>
