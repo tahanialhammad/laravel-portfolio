@@ -2,7 +2,7 @@
   <div class="container">
     <h1>Alle Projects</h1>
     <!-- <a href="#projectsform" @click.prevent="scrollTo('#projectsform')">Add new Project</a> -->
-    <scroll-link href="#projectsform">Add new Project</scroll-link>
+    <scroll-link href="#projectsform" class="btn btn-outline-primary btn-sm rounded-circle"><i class="fas fa-plus-circle"></i></scroll-link>
     <div class="card text-dark mb-2" v-for="project in projects">
       <div class="card-body">
         <h5 class="card-title">{{ project.user.name }} make this project:</h5>
@@ -19,7 +19,7 @@
     <add-new-project @completed="addProject"></add-new-project>
     </div>
     <!-- <a href="#app" @click.prevent="scrollTo('#app')">scroll to top</a> -->
-    <scroll-link href="#app">Go To Top</scroll-link>
+    <scroll-link href="#app" class="btn btn-outline-primary btn-sm rounded-circle"><i class="fas fa-arrow-circle-up"></i></scroll-link>
   </div>
 </template>
 

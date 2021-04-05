@@ -25256,9 +25256,14 @@ var render = function() {
     [
       _c("h1", [_vm._v("Alle Projects")]),
       _vm._v(" "),
-      _c("scroll-link", { attrs: { href: "#projectsform" } }, [
-        _vm._v("Add new Project")
-      ]),
+      _c(
+        "scroll-link",
+        {
+          staticClass: "btn btn-outline-primary btn-sm rounded-circle",
+          attrs: { href: "#projectsform" }
+        },
+        [_c("i", { staticClass: "fas fa-plus-circle" })]
+      ),
       _vm._v(" "),
       _vm._l(_vm.projects, function(project) {
         return _c("div", { staticClass: "card text-dark mb-2" }, [
@@ -25296,7 +25301,14 @@ var render = function() {
         1
       ),
       _vm._v(" "),
-      _c("scroll-link", { attrs: { href: "#app" } }, [_vm._v("Go To Top")])
+      _c(
+        "scroll-link",
+        {
+          staticClass: "btn btn-outline-primary btn-sm rounded-circle",
+          attrs: { href: "#app" }
+        },
+        [_c("i", { staticClass: "fas fa-arrow-circle-up" })]
+      )
     ],
     2
   )
