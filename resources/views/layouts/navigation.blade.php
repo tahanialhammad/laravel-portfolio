@@ -15,10 +15,10 @@
                     <router-link to="/" class="nav-link" exact>Home</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/about" class="nav-link">About</router-link>
+                    <router-link to="/myprojects" class="nav-link">My Projects</router-link>
                 </li>
                 <li class="nav-item">
-                    <router-link to="/myprojects" class="nav-link">My Projects</router-link>
+                    <router-link to="/about" class="nav-link">About</router-link>
                 </li>
                 <li class="nav-item">
                     <router-link to="/contact" class="nav-link">Contact</router-link>

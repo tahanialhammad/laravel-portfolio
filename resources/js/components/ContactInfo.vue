@@ -17,3 +17,6 @@ export default {
   },
 };
 </script>
+<style scoped>
+h3{color: yellow;}
+</style>
